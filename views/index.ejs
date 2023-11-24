@@ -109,7 +109,7 @@
                             <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                             <% }) %>
 
-                             <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                             <% totalCredits +=  totalSubjectCredits ; %>
     
                             
                          
@@ -127,7 +127,9 @@
                       <% sgpaArr.push(0);%>
                     <tr class="table-danger ">
                         <td></td>
-                            <td> </td>
+                        <td colspan="2">Total Subject Credits:</td>
+                        <td><%= totalSubjectCredits %></td>
+                        <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                             <td>SGPA:-</td>
                             <td>FAIL</td>
                         </tr>
@@ -173,7 +175,7 @@
                             <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                             <% }) %>
 
-                             <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                             <% totalCredits += totalSubjectCredits ; %>
     
                             
                          
@@ -191,7 +193,9 @@
                     <% }else{ %>
                       <% sgpaArr.push(0);%>
                     <tr class="table-danger ">
-                        <td></td>
+                      <td colspan="2">Total Subject Credits:</td>
+                      <td><%= totalSubjectCredits %></td>
+                      <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                             <td></td>
                             <td>SGPA:-</td>
                             <td>FAIL</td>
@@ -237,7 +241,7 @@
                             <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                             <% }) %>
 
-                             <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                             <% totalCredits +=  totalSubjectCredits ; %>
     
                             
                          
@@ -254,8 +258,10 @@
                     <% }else{ %>
                       <% sgpaArr.push(0);%>
                     <tr class="table-danger ">
-                        <td></td>
-                            <td> </td>
+                        
+                        <td colspan="2">Total Subject Credits:</td>
+                        <td><%= totalSubjectCredits %></td>
+                        <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                             <td>SGPA:-</td>
                             <td>FAIL</td>
                         </tr>
@@ -297,7 +303,7 @@
                             <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                             <% }) %>
 
-                             <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                             <% totalCredits +=  totalSubjectCredits ; %>
     
                             
                          
@@ -314,8 +320,9 @@
                     <% }else{ %>
                       <% sgpaArr.push(0);%>
                     <tr class="table-danger ">
-                        <td></td>
-                            <td> </td>
+                      <td colspan="2">Total Subject Credits:</td>
+                      <td><%= totalSubjectCredits %></td>
+                      <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                             <td>SGPA:-</td>
                             <td>FAIL</td>
                         </tr>
@@ -357,7 +364,7 @@
                             <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                             <% }) %>
 
-                             <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                             <% totalCredits +=  totalSubjectCredits ; %>
     
                             
                          
@@ -374,8 +381,9 @@
                     <% }else{ %>
                       <% sgpaArr.push(0);%>
                     <tr class="table-danger ">
-                        <td></td>
-                            <td> </td>
+                      <td colspan="2">Total Subject Credits:</td>
+                      <td><%= totalSubjectCredits %></td>
+                      <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                             <td>SGPA:-</td>
                             <td>FAIL</td>
                         </tr>
@@ -417,7 +425,7 @@
                             <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                             <% }) %>
 
-                             <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                             <% totalCredits +=  totalSubjectCredits ; %>
     
                             
                          
@@ -434,8 +442,9 @@
                     <% }else{ %>
                       <% sgpaArr.push(0);%>
                     <tr class="table-danger ">
-                        <td></td>
-                            <td> </td>
+                      <td colspan="2">Total Subject Credits:</td>
+                      <td><%= totalSubjectCredits %></td>
+                      <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                             <td>SGPA:-</td>
                             <td>FAIL</td>
                         </tr>
@@ -476,7 +485,7 @@
                             <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                             <% }) %>
 
-                             <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                             <% totalCredits +=  totalSubjectCredits ; %>
     
                             
                          
@@ -493,8 +502,9 @@
                     <% }else{ %>
                       <% sgpaArr.push(0);%>
                     <tr class="table-danger ">
-                        <td></td>
-                            <td> </td>
+                      <td colspan="2">Total Subject Credits:</td>
+                      <td><%= totalSubjectCredits %></td>
+                      <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                             <td>SGPA:-</td>
                             <td>FAIL</td>
                         </tr>
@@ -536,7 +546,7 @@
                           <% totalSubjectCredits += parseFloat(value[k].subject_credits); %>
                           <% }) %>
 
-                           <% totalCredits += SGPA ? totalSubjectCredits : 0; %>
+                           <% totalCredits +=  totalSubjectCredits ; %>
   
                           
                        
@@ -553,8 +563,9 @@
                   <% }else{ %>
                     <% sgpaArr.push(0);%>
                   <tr class="table-danger ">
-                      <td></td>
-                          <td> </td>
+                    <td colspan="2">Total Subject Credits:</td>
+                    <td><%= totalSubjectCredits %></td>
+                    <td colspan="2">Total Credits (including SGPA): <%= totalCredits %></td>
                           <td>SGPA:-</td>
                           <td>FAIL</td>
                       </tr>
